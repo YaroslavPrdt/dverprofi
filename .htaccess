@@ -1,0 +1,5 @@
+<FilesMatch ".(jpg|jpeg|png|ico|js|css)$">
+Header set Cache-Control "max-age=2629000"
+</FilesMatch>
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ http://dverprofi.ru/ [L,R=301]
